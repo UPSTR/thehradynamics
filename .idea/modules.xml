@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/thehradynamics.iml" filepath="$PROJECT_DIR$/.idea/thehradynamics.iml" />
+      <module fileurl="file://D://thehradynamics/../../thehradynamic/.idea/thehradynamics.iml" filepath="D://thehradynamics/../../thehradynamic/.idea/thehradynamics.iml" />
+    </modules>
+  </component>
+</project>
