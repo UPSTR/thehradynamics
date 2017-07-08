@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <title>The Radynamic</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic"
+          rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -18,47 +21,74 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="logo">
-                    <img src="" alt="">
+                    <a href="">
+                        <img src="images/logo.png" alt="">
+                    </a>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="callBlock">
+            <div class="col-md-6 callBlock">
+                <div class="callNow">
+                    <a href="">Call NOW!</a>
+                </div>
+                <div class="callNumber">
                     <span class="callTxt">CALL:</span>
-                    <span class="callNumber">7185181133</span>
+                    <span class="callNumb">7185181133</span>
                 </div>
             </div>
         </div>
 
         <!--NAV-->
         <div class="navigation">
-            <ul>
-                <li>
-                    <a href="">home</a>
-                </li>
-                <li>
-                    <a href="">home</a>
-                </li>
-                <li>
-                    <a href="">home</a>
-                </li>
-                <li>
-                    <a href="">home</a>
-                </li>
-                <li>
-                    <a href="">home</a>
-                </li>
-            </ul>
 
-            <div class="searchBlock">
-                <form action="">
-                    <div class="searchForm">
-                        <button>
-                            <i>1</i>
-                        </button>
-                        <input type="text">
-                    </div>
-                </form>
-            </div>
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About us</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rehabilitation Services <b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Link action</a></li>
+                                <li><a href="#">Another action</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our team <b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Link action</a></li>
+                                <li><a href="#">Another action</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Contact us</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <div class="searchBlock">
+                                <form action="">
+                                    <div class="searchForm">
+                                        <button>
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                        <input type="text" placeholder="Search">
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
         </div>
         <!--END NAV-->
     </div>
@@ -69,35 +99,51 @@
 <!--SLIDER-->
 <div class="slides">
 
-    <!--IMAGE-->
-    <img src="" alt="">
-
     <!--BANNER-->
     <div class="container">
-        <div class="banner">
 
-            <div class="row">
-                <div class="col-md-6 col-md-offset-6">
-                    banner
+        <div class="row">
+            <div class="col-md-6 col-md-offset-6">
+                <div class="banner">
+                    <div class="bannerTitle">
+                        Convenience Appointment Scheduling
+                    </div>
+                    <div class="bannerDescription">
+                        We offer flexible appointment scheduling <br> and accept an array of insurances
+                    </div>
+                    <div class="bannerForm">
+                        <form action="">
+                            <input type="text" placeholder="Enter your phone number or e-mail">
+                            <button>Make an appointment</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-
         </div>
+
     </div>
+
+    <!--IMAGE-->
+    <img src="images/slide.png" alt="">
 
 </div>
 <!--SLIDER-->
 
 <!--SECTION we work-->
-<div class="section">
+<div class="section sectionWeWork">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="title">
-                    We work for YOU
+                    We work for YOU!
                 </div>
                 <p>
-                    Theradynamics’ outpatient rehabilitation therapy centers offer comprehensive Physical Therapy services. Our experienced Physical Therapists will evaluate you based on your diagnosis and create an individualized treatment plan specific to your needs. During your one-on-one sessions our therapy team will work closely with you to attain your optimal level of function. We are committed to providing our patients with a calm, peaceful setting while offering the most leading edge technology and treatment options.
+                    Theradynamics’ outpatient rehabilitation therapy centers offer comprehensive Physical Therapy
+                    services. Our experienced Physical Therapists will evaluate you based on your diagnosis and create
+                    an individualized treatment plan specific to your needs. During your one-on-one sessions our therapy
+                    team will work closely with you to attain your optimal level of function. We are committed to
+                    providing our patients with a calm, peaceful setting while offering the most leading edge technology
+                    and treatment options.
                 </p>
                 <p>
                     We offer flexible appointment scheduling and accept an array of insurances.
@@ -107,16 +153,16 @@
                 <div class="blockList">
                     <div class="title">Our programs</div>
                     <ul>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> General orthopedics</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Industrial and work programs</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Joint replacement therapy</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Lymphedema management</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Pain management</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Stroke rehab</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Vestibular/balance therapy</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Sports injury rehabilitation</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Neurological disorders</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Pediatric therapy</li>
                     </ul>
                 </div>
             </div>
@@ -126,28 +172,53 @@
 <!--END SECTION we work-->
 
 <!--SECTION ourservice-->
-<div class="section">
-    <div class="col-xs-3">
-        <!-- required for floating -->
+<div class="section sectionServices">
+    <div class="col-xs-4 sectionServicesBlock1">
+        <div class="title">
+            Our Services
+        </div>
         <!-- Nav tabs -->
         <ul class="nav nav-tabs tabs-left">
-            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-            <li><a href="#profile" data-toggle="tab">Profile</a></li>
-            <li><a href="#messages" data-toggle="tab">Messages</a></li>
-            <li><a href="#settings" data-toggle="tab">Settings</a></li>
+            <li><a href="#Manipulation" data-toggle="tab">Manipulation/Manual Therapy</a></li>
+            <li><a href="#Massage" data-toggle="tab">Massage Therapy</a></li>
+            <li><a href="#Modalities" data-toggle="tab">Modalities</a></li>
+            <li class="active"><a href="#Neuromuscular" data-toggle="tab">Neuromuscular reeducation</a></li>
+            <li><a href="#Spinal" data-toggle="tab">Spinal Traction</a></li>
+            <li><a href="#Therapeutic" data-toggle="tab">Therapeutic Ultrasound</a></li>
+            <li><a href="#Treadmills" data-toggle="tab">Treadmills/Exercise Bikes</a></li>
+            <li><a href="#Treatment" data-toggle="tab">Treatment</a></li>
+            <li><a href="#Upper" data-toggle="tab">Upper Body Ergometer</a></li>
+            <li><a href="#Weight" data-toggle="tab">Weight Training Machines</a></li>
         </ul>
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-4 sectionServicesBlock2">
         <!-- Tab panes -->
         <div class="tab-content">
-            <div class="tab-pane active" id="home">Home Tab.</div>
-            <div class="tab-pane" id="profile">Profile Tab.</div>
-            <div class="tab-pane" id="messages">Messages Tab.</div>
-            <div class="tab-pane" id="settings">Settings Tab.</div>
+            <div class="tab-pane" id="Manipulation">Text tab</div>
+            <div class="tab-pane" id="Massage">Text tab</div>
+            <div class="tab-pane" id="Modalities">Text tab</div>
+            <div class="tab-pane active" id="Neuromuscular">
+                <div class="title">
+                    Neuromuscular reeducation
+                </div>
+                <p>
+                    Out-patient Physical Therapist re-educate the nervous system with almost every patient.
+                    Neuromuscular re-education techniques help patients regain normal, controlled movement patterns.
+                </p>
+                <div class="readMore">
+                    <a href="">Read more</a>
+                </div>
+            </div>
+            <div class="tab-pane" id="Spinal">Text tab</div>
+            <div class="tab-pane" id="Therapeutic">Text tab</div>
+            <div class="tab-pane" id="Treadmills">Text tab</div>
+            <div class="tab-pane" id="Treatment">Text tab</div>
+            <div class="tab-pane" id="Upper">Text tab</div>
+            <div class="tab-pane" id="Weight">Text tab</div>
         </div>
     </div>
-    <div class="col-xs-5">
-        image
+    <div class="col-xs-4 sectionServicesBlock3">
+
     </div>
     <div class="clearfix"></div>
 
@@ -174,22 +245,28 @@
                                 </div>
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-earphone"></span> Local Calls <span class="feature_desc">20c per call</span>
+                                        <span class="glyphicon glyphicon-earphone"></span> Local Calls <span
+                                            class="feature_desc">20c per call</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone-alt"></span> National Calls <span class="feature_desc">18c p/m</span>
+                                        <span class="glyphicon glyphicon-phone-alt"></span> National Calls <span
+                                            class="feature_desc">18c p/m</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> Mobile Calls <span class="feature_desc">30c p/m</span>
+                                        <span class="glyphicon glyphicon-phone"></span> Mobile Calls <span
+                                            class="feature_desc">30c p/m</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> 13/1300 Calls <span class="feature_desc">37c per call</span>
+                                        <span class="glyphicon glyphicon-phone"></span> 13/1300 Calls <span
+                                            class="feature_desc">37c per call</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> International Calls <span class="feature_desc"> </span>
+                                        <span class="glyphicon glyphicon-phone"></span> International Calls <span
+                                            class="feature_desc"> </span>
                                     </li>
                                 </ul>
-                                <div class="panel-footer btn-hide"> <a class="btn btn-lg btn-block btn-danger " href="#">Order Now</a> </div>
+                                <div class="panel-footer btn-hide"><a class="btn btn-lg btn-block btn-danger " href="#">Order
+                                    Now</a></div>
                             </div>
                         </div>
                     </div>
@@ -206,22 +283,28 @@
                                 </div>
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-earphone"></span> Local Calls <span class="feature_desc">Free</span>
+                                        <span class="glyphicon glyphicon-earphone"></span> Local Calls <span
+                                            class="feature_desc">Free</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone-alt"></span> National Calls <span class="feature_desc">Free</span>
+                                        <span class="glyphicon glyphicon-phone-alt"></span> National Calls <span
+                                            class="feature_desc">Free</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> Mobile Calls <span class="feature_desc">30c p/m</span>
+                                        <span class="glyphicon glyphicon-phone"></span> Mobile Calls <span
+                                            class="feature_desc">30c p/m</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> 13/1300 Calls <span class="feature_desc">37c per call</span>
+                                        <span class="glyphicon glyphicon-phone"></span> 13/1300 Calls <span
+                                            class="feature_desc">37c per call</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> International Calls <span class="feature_desc"> </span>
+                                        <span class="glyphicon glyphicon-phone"></span> International Calls <span
+                                            class="feature_desc"> </span>
                                     </li>
                                 </ul>
-                                <div class="panel-footer btn-hide"> <a class="btn btn-lg btn-block btn-danger " href="#">Order Now</a> </div>
+                                <div class="panel-footer btn-hide"><a class="btn btn-lg btn-block btn-danger " href="#">Order
+                                    Now</a></div>
                             </div>
                         </div>
                     </div>
@@ -238,22 +321,28 @@
                                 </div>
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-earphone"></span> Local Calls <span class="feature_desc">Free</span>
+                                        <span class="glyphicon glyphicon-earphone"></span> Local Calls <span
+                                            class="feature_desc">Free</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone-alt"></span> National Calls <span class="feature_desc">Free</span>
+                                        <span class="glyphicon glyphicon-phone-alt"></span> National Calls <span
+                                            class="feature_desc">Free</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> Mobile Calls <span class="feature_desc">Free</span>
+                                        <span class="glyphicon glyphicon-phone"></span> Mobile Calls <span
+                                            class="feature_desc">Free</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> 13/1300 Calls <span class="feature_desc">37c per call</span>
+                                        <span class="glyphicon glyphicon-phone"></span> 13/1300 Calls <span
+                                            class="feature_desc">37c per call</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> International Calls <span class="feature_desc"> </span>
+                                        <span class="glyphicon glyphicon-phone"></span> International Calls <span
+                                            class="feature_desc"> </span>
                                     </li>
                                 </ul>
-                                <div class="panel-footer btn-hide"> <a class="btn btn-lg btn-block btn-danger btn-hide" href="#">Order Now</a> </div>
+                                <div class="panel-footer btn-hide"><a class="btn btn-lg btn-block btn-danger btn-hide"
+                                                                      href="#">Order Now</a></div>
                             </div>
                         </div>
                     </div>
@@ -270,29 +359,37 @@
                                 </div>
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-earphone"></span> Local Calls <span class="feature_desc">Free</span>
+                                        <span class="glyphicon glyphicon-earphone"></span> Local Calls <span
+                                            class="feature_desc">Free</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone-alt"></span> National Calls <span class="feature_desc">Free</span>
+                                        <span class="glyphicon glyphicon-phone-alt"></span> National Calls <span
+                                            class="feature_desc">Free</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> Mobile Calls <span class="feature_desc">Free</span>
+                                        <span class="glyphicon glyphicon-phone"></span> Mobile Calls <span
+                                            class="feature_desc">Free</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> 13/1300 Calls <span class="feature_desc">Free</span>
+                                        <span class="glyphicon glyphicon-phone"></span> 13/1300 Calls <span
+                                            class="feature_desc">Free</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> International Calls <span class="feature_desc"> </span>
+                                        <span class="glyphicon glyphicon-phone"></span> International Calls <span
+                                            class="feature_desc"> </span>
                                     </li>
                                 </ul>
-                                <div class="panel-footer btn-hide"> <a class="btn btn-lg btn-block btn-danger " href="#">Order Now</a> </div>
+                                <div class="panel-footer btn-hide"><a class="btn btn-lg btn-block btn-danger " href="#">Order
+                                    Now</a></div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i
+                        class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i
+                        class="glyphicon glyphicon-chevron-right"></i></a>
             </div>
         </div>
     </div>
@@ -301,24 +398,79 @@
 <!--END SECTION review-->
 
 <!--SECTION contacts-->
-<div class="section">
-    <div class="col-xs-4">
-        1
+<div class="section sectionContact">
+    <div class="col-xs-4 contactBlock">
+        <div class="contact">
+            <div class="contact1">
+                153 Bennett Avebr <br>
+                New York, NY 10040 <br>
+                Tel: (212) 928-7800
+                <div class="veewMapBtn">
+                    <a href=""> <img src="images/marker.png" alt="">View on map</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-xs-4">
-        1
+    <div class="col-xs-4 contactBlock">
+        <div class="contact">
+            <div class="contact2">
+                610 West 150th Street<br>
+                New York, NY 10031<br>
+                Tel: (212) 281-4400<br>
+                Fax: (212) 281-4600
+                <div class="veewMapBtn">
+                    <a href=""> <img src="images/marker.png" alt="">View on map</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-xs-4">
-        1
+    <div class="col-xs-4 contactBlock">
+        <div class="contact">
+            <div class="contact3">
+                153 Bennett Avebr <br>
+                New York, NY 10040 <br>
+                Tel: (212) 928-7800
+                <div class="veewMapBtn">
+                    <a href=""> <img src="images/marker.png" alt="">View on map</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-xs-4">
-        1
+    <div class="col-xs-4 contactBlock">
+        <div class="contact">
+            <div class="contact4">
+                153 Bennett Avebr <br>
+                New York, NY 10040 <br>
+                Tel: (212) 928-7800
+                <div class="veewMapBtn">
+                    <a href=""> <img src="images/marker.png" alt="">View on map</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-xs-4">
-        1
+    <div class="col-xs-4 contactBlock">
+        <div class="contact">
+            <div class="contact5">
+                153 Bennett Avebr <br>
+                New York, NY 10040 <br>
+                Tel: (212) 928-7800
+                <div class="veewMapBtn">
+                    <a href=""> <img src="images/marker.png" alt="">View on map</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-xs-4">
-        1
+    <div class="col-xs-4 contactBlock">
+        <div class="contact">
+            <div class="contact6">
+                153 Bennett Avebr <br>
+                New York, NY 10040 <br>
+                Tel: (212) 928-7800
+                <div class="veewMapBtn">
+                    <a href=""> <img src="images/marker.png" alt="">View on map</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!--END SECTION contacts-->
@@ -328,14 +480,40 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                1
+                <div class="footer-nav-title">Company</div>
+                <ul class="footer-nav-list">
+                    <li class="nav-list-item"><a href="#">About Theradynamics</a></li>
+                    <li class="nav-list-item"><a href="#">Management Team</a></li>
+                    <li class="nav-list-item"><a href="#">Team Theradynamics</a></li>
+                    <li class="nav-list-item"><a href="#">Join Our Team</a></li>
+                    <li class="nav-list-item"><a href="#">Contact Us</a></li>
+                </ul>
             </div>
             <div class="col-md-4">
-                1
+                <div class="footer-nav-title">Rehabilitation Services</div>
+                <ul class="footer-nav-list">
+                    <li class="nav-list-item"><a href="">Rehabilitation Management Solutions</a></li>
+                    <li class="nav-list-item"><a href="">Home Care</a></li>
+                    <li class="nav-list-item"><a href="">Outpatient</a></li>
+                    <li class="nav-list-item"><a href="">Pediatrics</a></li>
+                </ul>
             </div>
             <div class="col-md-4">
-                1
+                <div class="copy">© 2017 Theradynamics Rehab Management</div>
+                <div class="address">225 Crossways Park Drive, Woodbury, NY 11797</div>
+                <div class="footer-contacts">
+                    Phone: 516-422-7840 <br>
+                    Fax: 516-422-7859 <br>
+                    E-mail: contactus@theradynamics.com
+                </div>
             </div>
+        </div>
+        <div class="social-links">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
         </div>
     </div>
 </div>
@@ -344,7 +522,9 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
