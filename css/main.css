@@ -7,6 +7,13 @@ body {
     max-width: 970px;
 }
 
+h1 {
+    font-size:40px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+}
+
 input, button {
     outline: none;
 }
@@ -843,13 +850,13 @@ input, button {
 @media (min-width: 992px) {
     .bx-wrapper .bx-controls-direction a {
         position: absolute;
-        top: 49%;
+        top: 48%;
         margin-top: -16px;
-        margin-left: -70px;
-        margin-right: -50px;
+        margin-left: -75px;
+        margin-right: -55px;
         outline: 0;
-        width: 32px;
-        height: 32px;
+        width: 38px;
+        height: 38px;
         text-indent: -9999px;
         z-index: 9999;
         background-color: #a9a8ba;
@@ -859,6 +866,23 @@ input, button {
     }
 }
 
-
 /*END BX SLIDER*/
 
+/*CONTENT*/
+.content {
+    margin: 40px;
+}
+
+.content p {
+    margin-bottom: 24px;
+}
+.content .material {
+    padding: 0 100px 0 2px;
+}
+/*END CONTENT*/
+
+/*SECTION DEPARTMENTS*/
+.sectionDepartments {
+
+}
+/*END SECTION DEPARTMENTS*/
