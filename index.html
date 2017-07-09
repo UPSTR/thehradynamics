@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <title>The Radynamic</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic"
           rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -18,76 +22,90 @@
 <!--HEADER-->
 <div class="header">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
+        <div class="row justify-content-sm-center justify-content-md-center justify-content-center">
+            <div class="col-auto col-xs-auto col-sm-auto col-md-auto col-lg-6 col-xl-6 text-xs-center">
                 <div class="logo">
                     <a href="">
                         <img src="images/logo.png" alt="">
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 callBlock">
-                <div class="callNow">
-                    <a href="">Call NOW!</a>
-                </div>
-                <div class="callNumber">
-                    <span class="callTxt">CALL:</span>
-                    <span class="callNumb">7185181133</span>
+            <div class="col-10 col-xs-10 col-sm-auto col-md-12 col-lg-6 col-xl-6 callBlock">
+                <div class="row">
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-7 text-center">
+                        <div class="callNumber text-lg-right">
+                            <span class="callTxt ">CALL:</span>
+                            <span class="callNumb ">7185181133</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-5 text-center">
+                        <div class="callNow text-lg-right text-xl-right">
+                            <a href="">Call NOW!</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!--NAV-->
         <div class="navigation">
-
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a href="">Home</a>
+            <nav class="navbar navbar-default navbar-toggleable-md navbar-light bg-faded">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
                         </li>
-                        <li>
-                            <a href="">About us</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rehabilitation Services <b
-                                    class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Link action</a></li>
-                                <li><a href="#">Another action</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our team <b
-                                    class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Link action</a></li>
-                                <li><a href="#">Another action</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">Contact us</a>
-                        </li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <div class="searchBlock">
-                                <form action="">
-                                    <div class="searchForm">
-                                        <button>
-                                            <i class="fa fa-search" aria-hidden="true"></i>
-                                        </button>
-                                        <input type="text" placeholder="Search">
-                                    </div>
-                                </form>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="">
+                                Rehabilitation Services
+                            </a>
+                            <a href="" class="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="">
+                                Our team
+                            </a>
+                            <a class="nav-link" href="" id="navbarDropdownMenuLinkOurTeam" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
                     </ul>
+                    <div class="searchBlock form-inline my-2 my-lg-0">
+                        <form action="">
+                            <div class="searchForm">
+                                <button>
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                                <input type="text" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </nav>
+
 
         </div>
         <!--END NAV-->
@@ -102,8 +120,8 @@
     <!--BANNER-->
     <div class="container">
 
-        <div class="row">
-            <div class="col-md-6 col-md-offset-6">
+        <div class="row justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-end">
+            <div class=" col-11 col-sm-10 col-md-8 col-lg-6">
                 <div class="banner">
                     <div class="bannerTitle">
                         Convenience Appointment Scheduling
@@ -154,7 +172,7 @@
                     <div class="title">Our programs</div>
                     <ul>
                         <li><i class="fa fa-check" aria-hidden="true"></i> General orthopedics</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i> Industrial and work programs</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Industrial and work programs</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i> Joint replacement therapy</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i> Lymphedema management</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i> Pain management</li>
@@ -173,52 +191,78 @@
 
 <!--SECTION ourservice-->
 <div class="section sectionServices">
-    <div class="col-xs-4 sectionServicesBlock1">
-        <div class="title">
-            Our Services
-        </div>
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs tabs-left">
-            <li><a href="#Manipulation" data-toggle="tab">Manipulation/Manual Therapy</a></li>
-            <li><a href="#Massage" data-toggle="tab">Massage Therapy</a></li>
-            <li><a href="#Modalities" data-toggle="tab">Modalities</a></li>
-            <li class="active"><a href="#Neuromuscular" data-toggle="tab">Neuromuscular reeducation</a></li>
-            <li><a href="#Spinal" data-toggle="tab">Spinal Traction</a></li>
-            <li><a href="#Therapeutic" data-toggle="tab">Therapeutic Ultrasound</a></li>
-            <li><a href="#Treadmills" data-toggle="tab">Treadmills/Exercise Bikes</a></li>
-            <li><a href="#Treatment" data-toggle="tab">Treatment</a></li>
-            <li><a href="#Upper" data-toggle="tab">Upper Body Ergometer</a></li>
-            <li><a href="#Weight" data-toggle="tab">Weight Training Machines</a></li>
-        </ul>
-    </div>
-    <div class="col-xs-4 sectionServicesBlock2">
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div class="tab-pane" id="Manipulation">Text tab</div>
-            <div class="tab-pane" id="Massage">Text tab</div>
-            <div class="tab-pane" id="Modalities">Text tab</div>
-            <div class="tab-pane active" id="Neuromuscular">
-                <div class="title">
-                    Neuromuscular reeducation
-                </div>
-                <p>
-                    Out-patient Physical Therapist re-educate the nervous system with almost every patient.
-                    Neuromuscular re-education techniques help patients regain normal, controlled movement patterns.
-                </p>
-                <div class="readMore">
-                    <a href="">Read more</a>
-                </div>
+    <div class="row serviceBlock">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4 sectionServicesBlock1">
+            <div class="title">
+                Our Services
             </div>
-            <div class="tab-pane" id="Spinal">Text tab</div>
-            <div class="tab-pane" id="Therapeutic">Text tab</div>
-            <div class="tab-pane" id="Treadmills">Text tab</div>
-            <div class="tab-pane" id="Treatment">Text tab</div>
-            <div class="tab-pane" id="Upper">Text tab</div>
-            <div class="tab-pane" id="Weight">Text tab</div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs tabs-left" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Manipulation" data-toggle="tab" role="tab">Manipulation/Manual Therapy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Massage" data-toggle="tab" role="tab">Massage Therapy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Modalities" data-toggle="tab" role="tab">Modalities</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Neuromuscular" data-toggle="tab" role="tab">Neuromuscular
+                        reeducation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Spinal" data-toggle="tab" role="tab">Spinal Traction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Therapeutic" data-toggle="tab" role="tab">Therapeutic
+                        Ultrasound</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Treadmills" data-toggle="tab" role="tab">Treadmills/Exercise
+                        Bikes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Treatment" data-toggle="tab" role="tab">Treatment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Upper" data-toggle="tab" role="tab">Upper Body Ergometer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Weight" data-toggle="tab" role="tab">Weight Training
+                        Machines</a>
+                </li>
+            </ul>
         </div>
-    </div>
-    <div class="col-xs-4 sectionServicesBlock3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4 sectionServicesBlock2">
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane" id="Manipulation" role="tabpanel">Text tab1</div>
+                <div class="tab-pane" id="Massage" role="tabpanel">Text tab2</div>
+                <div class="tab-pane" id="Modalities" role="tabpanel">Text tab3</div>
+                <div class="tab-pane active" id="Neuromuscular" role="tabpanel">
+                    <div class="title">
+                        Neuromuscular reeducation
+                    </div>
+                    <p>
+                        Out-patient Physical Therapist re-educate the nervous system with almost every patient.
+                        Neuromuscular re-education techniques help patients regain normal, controlled movement patterns.
+                    </p>
+                    <div class="readMore">
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+                <div class="tab-pane" id="Spinal" role="tabpanel">Text tab</div>
+                <div class="tab-pane" id="Therapeutic" role="tabpanel">Text tab</div>
+                <div class="tab-pane" id="Treadmills" role="tabpanel">Text tab</div>
+                <div class="tab-pane" id="Treatment" role="tabpanel">Text tab</div>
+                <div class="tab-pane" id="Upper" role="tabpanel">Text tab</div>
+                <div class="tab-pane" id="Weight" role="tabpanel">Text tab</div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-0 col-md-4  col-lg-4 sectionServicesBlock3">
 
+        </div>
     </div>
     <div class="clearfix"></div>
 
@@ -226,170 +270,137 @@
 <!--END SECTION ourservice-->
 
 
-<!--SECTION review-->
+<!--SECTION review -->
 <div class="section">
     <div class="container">
-        <div class="col-md-12">
-            <div class="carousel slide" id="myCarousel">
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
-                            <div class="panel panel-danger">
-                                <div class="panel-heading">
-                                    <h3 class="text-center hprice">Basic</h3>
-                                    <p class="text-center">Monthly Rental</p>
-                                </div>
-                                <div class="panel-body text-center">
-                                    <h3 class="hprice pricetag">
-                                        <span class="symbol">$</span>32 <span class="symbol">95c</span></h3>
-                                </div>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-earphone"></span> Local Calls <span
-                                            class="feature_desc">20c per call</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone-alt"></span> National Calls <span
-                                            class="feature_desc">18c p/m</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> Mobile Calls <span
-                                            class="feature_desc">30c p/m</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> 13/1300 Calls <span
-                                            class="feature_desc">37c per call</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> International Calls <span
-                                            class="feature_desc"> </span>
-                                    </li>
-                                </ul>
-                                <div class="panel-footer btn-hide"><a class="btn btn-lg btn-block btn-danger " href="#">Order
-                                    Now</a></div>
-                            </div>
+        <div class="sliderReviews">
+            <div class="slide">
+                <div class="userBlock">
+                    <div class="avatar">
+                        <img src="images/review1.png" alt="">
+                    </div>
+                    <div class="userName">
+                        Alex B. Coney Island, NY
+                    </div>
+                    <div class="userPosition">
+                        The patient
+                    </div>
+                    <div class="controls">
+                        <div class="rating text-left">
+                            <div id="stars-existing" class="starrr" data-rating='3'></div>
+                            <a href="" class="reviewsBtn">Reviews</a>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
-                            <div class="panel panel-info">
-                                <div class="panel-heading">
-                                    <h3 class="text-center hprice">Saver</h3>
-                                    <p class="text-center">Monthly Rental</p>
-                                </div>
-                                <div class="panel-body text-center">
-                                    <h3 class="hprice pricetag">
-                                        <span class="symbol">$</span>46</h3>
-                                </div>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-earphone"></span> Local Calls <span
-                                            class="feature_desc">Free</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone-alt"></span> National Calls <span
-                                            class="feature_desc">Free</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> Mobile Calls <span
-                                            class="feature_desc">30c p/m</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> 13/1300 Calls <span
-                                            class="feature_desc">37c per call</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> International Calls <span
-                                            class="feature_desc"> </span>
-                                    </li>
-                                </ul>
-                                <div class="panel-footer btn-hide"><a class="btn btn-lg btn-block btn-danger " href="#">Order
-                                    Now</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
-                            <div class="panel panel-success">
-                                <div class="panel-heading">
-                                    <h3 class="text-center hprice">Premium</h3>
-                                    <p class="text-center">Monthly Rental</p>
-                                </div>
-                                <div class="panel-body text-center">
-                                    <h3 class="hprice pricetag">
-                                        <span class="symbol">$</span>85</h3>
-                                </div>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-earphone"></span> Local Calls <span
-                                            class="feature_desc">Free</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone-alt"></span> National Calls <span
-                                            class="feature_desc">Free</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> Mobile Calls <span
-                                            class="feature_desc">Free</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> 13/1300 Calls <span
-                                            class="feature_desc">37c per call</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> International Calls <span
-                                            class="feature_desc"> </span>
-                                    </li>
-                                </ul>
-                                <div class="panel-footer btn-hide"><a class="btn btn-lg btn-block btn-danger btn-hide"
-                                                                      href="#">Order Now</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
-                            <div class="panel panel-warning">
-                                <div class="panel-heading">
-                                    <h3 class="text-center hprice">Ultimate</h3>
-                                    <p class="text-center">Monthly Rental</p>
-                                </div>
-                                <div class="panel-body text-center">
-                                    <h3 class="hprice pricetag">
-                                        <span class="symbol">$</span>95</h3>
-                                </div>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-earphone"></span> Local Calls <span
-                                            class="feature_desc">Free</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone-alt"></span> National Calls <span
-                                            class="feature_desc">Free</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> Mobile Calls <span
-                                            class="feature_desc">Free</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> 13/1300 Calls <span
-                                            class="feature_desc">Free</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-phone"></span> International Calls <span
-                                            class="feature_desc"> </span>
-                                    </li>
-                                </ul>
-                                <div class="panel-footer btn-hide"><a class="btn btn-lg btn-block btn-danger " href="#">Order
-                                    Now</a></div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i
-                        class="glyphicon glyphicon-chevron-left"></i></a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i
-                        class="glyphicon glyphicon-chevron-right"></i></a>
+                <div class="reviewTxt">
+                    Dr. Yelena Sokolova and her staff have been helping me and my family for over 9 years now. She is an excellent doctor and a true professional in her field. She is very knowledgeable and compassionate to all her patients. She takes her time to truly understand and help each one of her patients. She is an amazing Rheumatologist and I believe she is the best in the New York City Metro Area. Thank you Doctor for everything, and I am truly grateful to have found you for all my medical issues. See you at my next appointment!
+                </div>
+            </div>
+            <div class="slide">
+                <div class="userBlock">
+                    <div class="avatar">
+                        <img src="images/review2.png" alt="">
+                    </div>
+                    <div class="userName">
+                        Diana M
+                    </div>
+                    <div class="userPosition">
+                        The patient
+                    </div>
+                    <div class="controls">
+                        <div class="rating text-left">
+                            <div id="stars-existing2" class="starrr" data-rating='3'></div>
+                            <a href="" class="reviewsBtn">Reviews</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviewTxt">
+                    Absolutely amazing staff and even better doctors. Everyone was very professional and attentive to my needs and took their time to see me and hear me out. The wait time was very short and the whole process seemed highly efficient. As an aspiring physician myself, I can vouch that they have the best equipment and are very knowledgeable in their field and will do their best to help anyone that comes to see them. Loved my experience and will definitely come back and recommend to all my friends.                </div>
+            </div>
+            <div class="slide">
+                <div class="userBlock">
+                    <div class="avatar">
+                        <img src="images/review3.png" alt="">
+                    </div>
+                    <div class="userName">
+                        Elcio B. Brooklyn, NY
+                    </div>
+                    <div class="userPosition">
+                        The patient
+                    </div>
+                    <div class="controls">
+                        <div class="rating text-left">
+                            <div id="stars-existing3" class="starrr" data-rating='3'></div>
+                            <a href="" class="reviewsBtn">Reviews</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviewTxt">
+                    I’ve been seen Dr. Sokolova for over 9 years. When I first came to see her, I could barely walk. I used to be . pain all the time. I was miserable. Thanks to her and her dedicated staff, My R. A. is in control. She’s always on top of the issues I have. I’ve finally found a doctor that I can rely all the time.                </div>
+            </div>
+            <div class="slide">
+                <div class="userBlock">
+                    <div class="avatar">
+                        <img src="images/review1.png" alt="">
+                    </div>
+                    <div class="userName">
+                        Alex B. Coney Island, NY
+                    </div>
+                    <div class="userPosition">
+                        The patient
+                    </div>
+                    <div class="controls">
+                        <div class="rating text-left">
+                            <div id="stars-existing" class="starrr" data-rating='3'></div>
+                            <a href="" class="reviewsBtn">Reviews</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviewTxt">
+                    Dr. Yelena Sokolova and her staff have been helping me and my family for over 9 years now. She is an excellent doctor and a true professional in her field. She is very knowledgeable and compassionate to all her patients. She takes her time to truly understand and help each one of her patients. She is an amazing Rheumatologist and I believe she is the best in the New York City Metro Area. Thank you Doctor for everything, and I am truly grateful to have found you for all my medical issues. See you at my next appointment!
+                </div>
+            </div>
+            <div class="slide">
+                <div class="userBlock">
+                    <div class="avatar">
+                        <img src="images/review2.png" alt="">
+                    </div>
+                    <div class="userName">
+                        Diana M
+                    </div>
+                    <div class="userPosition">
+                        The patient
+                    </div>
+                    <div class="controls">
+                        <div class="rating text-left">
+                            <div id="stars-existing2" class="starrr" data-rating='3'></div>
+                            <a href="" class="reviewsBtn">Reviews</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviewTxt">
+                    Absolutely amazing staff and even better doctors. Everyone was very professional and attentive to my needs and took their time to see me and hear me out. The wait time was very short and the whole process seemed highly efficient. As an aspiring physician myself, I can vouch that they have the best equipment and are very knowledgeable in their field and will do their best to help anyone that comes to see them. Loved my experience and will definitely come back and recommend to all my friends.                </div>
+            </div>
+            <div class="slide">
+                <div class="userBlock">
+                    <div class="avatar">
+                        <img src="images/review3.png" alt="">
+                    </div>
+                    <div class="userName">
+                        Elcio B. Brooklyn, NY
+                    </div>
+                    <div class="userPosition">
+                        The patient
+                    </div>
+                    <div class="controls">
+                        <div class="rating text-left">
+                            <div id="stars-existing3" class="starrr" data-rating='3'></div>
+                            <a href="" class="reviewsBtn">Reviews</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviewTxt">
+                    I’ve been seen Dr. Sokolova for over 9 years. When I first came to see her, I could barely walk. I used to be . pain all the time. I was miserable. Thanks to her and her dedicated staff, My R. A. is in control. She’s always on top of the issues I have. I’ve finally found a doctor that I can rely all the time.                </div>
             </div>
         </div>
     </div>
@@ -397,9 +408,9 @@
 </div>
 <!--END SECTION review-->
 
-<!--SECTION contacts-->
+<!--SECTION contacts -->
 <div class="section sectionContact">
-    <div class="col-xs-4 contactBlock">
+    <div class="col-12 col-sm-6 col-md-4 contactBlock">
         <div class="contact">
             <div class="contact1">
                 153 Bennett Avebr <br>
@@ -411,7 +422,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-4 contactBlock">
+    <div class="col-12 col-sm-6 col-md-4 contactBlock">
         <div class="contact">
             <div class="contact2">
                 610 West 150th Street<br>
@@ -424,7 +435,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-4 contactBlock">
+    <div class="col-12 col-sm-6 col-md-4 contactBlock">
         <div class="contact">
             <div class="contact3">
                 153 Bennett Avebr <br>
@@ -436,7 +447,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-4 contactBlock">
+    <div class="col-12 col-sm-6 col-md-4 contactBlock">
         <div class="contact">
             <div class="contact4">
                 153 Bennett Avebr <br>
@@ -448,7 +459,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-4 contactBlock">
+    <div class="col-12 col-sm-6 col-md-4 contactBlock">
         <div class="contact">
             <div class="contact5">
                 153 Bennett Avebr <br>
@@ -460,7 +471,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-4 contactBlock">
+    <div class="col-12 col-sm-6 col-md-4 contactBlock">
         <div class="contact">
             <div class="contact6">
                 153 Bennett Avebr <br>
@@ -510,21 +521,29 @@
         </div>
         <div class="social-links">
             <a href=""><i class="fa fa-facebook"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
         </div>
     </div>
 </div>
 <!--END FOOTER-->
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script
+        src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+<script src="//cdn.rawgit.com/tonystar/bootstrap-hover-tabs/v3.1.1/bootstrap-hover-tabs.js"></script>
+
+<script src="js/jquery.bxslider.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -12,22 +12,43 @@ input, button {
 }
 
 /*HEADER*/
+@media (max-width: 992px) {
+    .navbar-toggler {
+        width: 100%;
+        margin:10px 0;
+        cursor: pointer;
+    }
+}
+@media (max-width: 992px) {
+    .navbar-toggler {
+        width: 100%;
+        margin:10px 0;
+        cursor: pointer;
+    }
+}
 .logo {
     margin: 17px 0 0 0;
 }
+@media (max-width: 380px) {
+    .logo a img {
+        width: 260px;
+    }
+}
 
 .callBlock {
-    padding: 0 0 0 0;
-    text-align: right;
+    /*text-align: right;*/
     font-family: 'Roboto', sans-serif;
 }
 
 .callNumber {
-    display: inline-block;
     font-size: 24px;
-    margin: 33px 36px 0 0;
-    padding: 2px 0 0 0;
-    float: right;
+    margin: 34px 0 0 0;
+}
+@media (max-width: 991px) {
+    .callNumber {
+        margin:10px 0;
+        padding:0;
+    }
 }
 
 .callNumber .callTxt {
@@ -40,8 +61,18 @@ input, button {
 
 .callNow {
     display: inline-block;
-    margin: 32px 12px 0 0;
-    float: right;
+    margin: 32px 0 0 0;
+}
+@media (max-width: 991px) {
+    .callNow {
+        margin:10px 0 10px 0;
+        display: block;
+    }
+}
+@media (min-width: 992px) {
+    .callNow {
+        margin-right:-17px;
+    }
 }
 
 .callNow a {
@@ -49,11 +80,18 @@ input, button {
     background: #513b56;
     font-size: 16px;
     display: inline-block;
-    padding: 9px 42px;
+    padding: 8px 42px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
     font-weight: normal;
+}
+@media (max-width: 991px) {
+    .callNow a {
+        margin:10px 0;
+        /*padding:0;*/
+        display: inline-block;
+    }
 }
 
 .callNow a:hover {
@@ -64,14 +102,21 @@ input, button {
 
 /*navigation*/
 .navigation {
-    margin: 16px 0 0 0;
+    margin: 8px 0 0 0;
     font-family: 'Roboto Condensed', sans-serif;
+}
+@media (max-width: 991px) {
+    .navigation {
+        margin:0;
+    }
 }
 
 .navigation .navbar-default {
     background-color: transparent;
     border-color: transparent;
     margin-bottom: 0;
+    padding-left:0;
+    padding-right:0;
 }
 
 .navigation ul {
@@ -90,11 +135,15 @@ input, button {
 
 .navigation .navbar-default ul li a {
     color: #513b56;
-    padding: 9px 18px;
-
+    padding: 5px 18px;
+    display: inline-block;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+}
+.navigation .navbar-light .navbar-nav .active>.nav-link {
+    padding: 5px 18px;
+    display: inline-block;
 }
 
 .navigation .navbar-default ul > li:hover > a {
@@ -133,6 +182,15 @@ input, button {
     -moz-border-radius: 20px;
     border-radius: 20px;
 }
+.dropdown-menu {
+    padding: 1px;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(188, 231, 132);
+    text-decoration: none;
+}
 
 .navigation .navbar-collapse {
     padding: 0;
@@ -159,6 +217,17 @@ input, button {
     padding: 0 10px 0 32px;
     font-size: 15px;
     height: 40px;
+}
+@media (max-width: 991px) {
+    .searchBlock form {
+        width: 100%;
+    }
+    .searchBlock .searchForm {
+        width: 100%;
+    }
+    .searchBlock .searchForm input {
+        width: 100%;
+    }
 }
 
 .searchBlock .searchForm button {
@@ -206,16 +275,24 @@ input, button {
 
 .banner {
     position: absolute;
-    height: 440px;
+    height: 438px;
     max-width: 457px;
     background: rgba(81, 59, 86, 0.95);
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
-    border-radius: 50px;
+    border-radius: 40px;
     padding: 55px 64px 55px 70px;
-
-    margin: 30px 0;
+    margin-top: 32px;
     color: #ffffff;
+}
+@media (max-width: 575px) {
+    .banner {
+        max-width: 100%;
+       margin-right: 15px;
+        margin-top: 30px;
+
+        padding:  40px 30px;
+    }
 }
 
 .bannerTitle {
@@ -224,14 +301,29 @@ input, button {
     margin-bottom: 19px;
     font-family: 'Roboto Condensed', sans-serif;
 }
+@media (max-width: 992px) {
+    .bannerTitle {
+        font-size: 26px;
+    }
+}
+@media (max-width: 575px) {
+    .bannerTitle {
+        font-size: 24px;
+    }
+}
 
 .bannerDescription {
     line-height: 23px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 
 .bannerForm {
     margin: 55px 0 0 0;
+}
+@media (max-width: 992px) {
+    .bannerForm {
+        margin: 25px 0 0 0;
+    }
 }
 
 .bannerForm input {
@@ -245,6 +337,7 @@ input, button {
     border: 1px solid #ffffff;
     font-size: 16px;
     text-align: center;
+    padding:0 10px;
 }
 
 .bannerForm button {
@@ -288,17 +381,20 @@ input, button {
 
 /*SECTION WE WORK*/
 .sectionWeWork {
-    padding: 68px 0;
+    padding: 70px 0;
 }
 
 .sectionWeWork .title {
-    font-size: 36px;
-    margin: 0 0 39px 5px;
+    font-size: 38px;
+    margin: 0 0 33px 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
 }
 
 .sectionWeWork p {
-    margin: 0 0 25px 5px;
-    line-height: 25px;
+    margin: 0 0 20px 5px;
+    line-height: 26px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .blockList {
@@ -307,8 +403,12 @@ input, button {
     padding: 30px 48px 50px 48px;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
-    border-radius: 40px;
-
+    border-radius: 40px
+}
+@media (max-width: 992px) {
+    .blockList {
+        margin: 11px 0 0 0px;
+    }
 }
 
 .blockList .title {
@@ -316,28 +416,31 @@ input, button {
     text-transform: uppercase;
     font-family: 'Roboto Condensed', sans-serif;
     padding: 0 6px;
-    margin-bottom: 25px;
+    margin-bottom: 21px;
 }
 
 .blockList ul {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 11px;
     padding: 0;
 }
 
 .blockList ul li {
     list-style-type: none;
     font-size: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .blockList ul li i {
     color: #1e7850;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 /*END SECTION WE WORK*/
 
 /*SECTION our service*/
+.tabs-left {
+    display: block;
+}
 .tabs-left, .tabs-right {
     border-bottom: none;
     padding-top: 2px;
@@ -354,6 +457,7 @@ input, button {
 .tabs-left > li, .tabs-right > li {
     float: none;
     margin-bottom: 2px;
+    width:100%;
 }
 
 .tabs-left > li {
@@ -367,8 +471,20 @@ input, button {
 .tabs-left > li.active > a,
 .tabs-left > li.active > a:hover,
 .tabs-left > li.active > a:focus {
+    width:100%;
+    display: inline-block;
     border-bottom-color: #ddd;
     border-right-color: transparent;
+}
+
+.tabs-left > li > a,
+.tabs-left > li > a:hover,
+.tabs-left > li > a:focus {
+    width:100%;
+    display: inline-block;
+    border-bottom-color: #ddd;
+    border-right-color: transparent;
+    text-decoration: none;
 }
 
 /*END SECTION our service*/
@@ -381,15 +497,24 @@ input, button {
     display: flex;
 }
 
+.serviceBlock {
+    margin: 0;
+    width:100%;
+}
+
 .sectionServices .title {
     font-size: 40px;
     font-family: 'Roboto Condensed', sans-serif;
-    padding: 66px 0 0 0;
 }
 
 .sectionServicesBlock1 {
     background: rgba(81, 59, 86, 0.95);
     padding: 0 0 60px 41px;
+    width:100%;
+}
+.sectionServicesBlock1 .title {
+    font-size: 40px;
+    padding: 40px 0 0 0;
 }
 
 .sectionServicesBlock1 ul.nav {
@@ -415,6 +540,16 @@ input, button {
     margin: 0;
 }
 
+.sectionServicesBlock1 .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #281d2b;
+    border: 0;
+    border-color: #ddd #ddd #fff;
+    -webkit-border-radius: 20px 0 0 20px;
+    -moz-border-radius: 20px 0 0 20px;
+    border-radius: 20px 0 0 20px;
+}
+
 .sectionServicesBlock1 ul.nav li.active:hover a {
     color: #ffffff;
 }
@@ -436,7 +571,7 @@ input, button {
 
 .sectionServicesBlock2 {
     background: rgba(40, 29, 43, 0.95);
-    padding: 0 40px;
+    padding: 40px 40px;
 }
 
 .sectionServicesBlock2 .title {
@@ -548,6 +683,10 @@ input, button {
     font-weight: normal;
 }
 
+.veewMapBtn a:hover {
+    text-decoration: none;
+}
+
 .veewMapBtn a img {
     margin-right: 10px;
 }
@@ -570,6 +709,11 @@ input, button {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+@media (max-width: 992px) {
+    .footer-nav-list {
+        margin: 0 0 18px 0;
+    }
 }
 
 .nav-list-item {
@@ -600,3 +744,121 @@ input, button {
     font-size: 14px;
     margin-right: 5px;
 }
+.social-links a:hover {
+    background: #513b56;
+}
+
+/*BX SLIDER*/
+.bx-wrapper {
+    position: relative;
+    margin: 80px 0;
+    padding: 0;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -moz-box-shadow: 0 0 0px #ccc;
+    -webkit-box-shadow: 0 0 0px #ccc;
+    box-shadow: 0 0 0px #ccc;
+    border: 0px solid #fff;
+    background: #fff;
+}
+
+.slide  .avatar {
+    float: left;
+    margin-right: 20px;
+}
+.slide .userName {
+    line-height:18px;
+    color: #281d2b;
+ }
+.slide .userPosition {
+    font-size: 14px;
+    margin-top: -3px;
+    color: #a9a8ba;
+ }
+.slide .rating {
+}
+.slide .starrr {
+    color: #513b56;
+    float: left;
+    margin: 6px 0 0 1px;
+}
+.slide .starrr i {
+    margin-right: 3px;
+}
+.slide .reviewsBtn {
+    color: #ffffff;
+    background: #513b56;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px 21px;
+    margin: 2px 0 0 7px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-weight: normal;
+}
+.slide .reviewsBtn:hover {
+    text-decoration: none;
+    background: #bce784;
+    color: #513b56;
+}
+.slide .reviewTxt {
+    font-size:13px;
+    margin: 14px 0;
+    line-height:22px;
+    padding: 0 80px 0 0;
+}
+@media (max-width: 992px) {
+    .sliderReviews  .slide {
+        width: 350px!important;
+    }
+    .slide .reviewTxt {
+        font-size:13px;
+        margin: 14px 0;
+        line-height:22px;
+        padding: 0 30px 0 0;
+    }
+}
+@media (max-width: 767px) {
+    .sliderReviews  .slide {
+        width: 255px!important;
+    }
+}
+@media (max-width: 576px) {
+    .sliderReviews  .slide {
+        width: 330px!important;
+        padding-right: 25px;
+
+    }
+}
+.bx-wrapper .bx-controls-direction a {
+    background-color: #a9a8ba;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+.bx-wrapper .bx-controls-direction a:hover {
+    background-color: #513b56;
+}
+@media (min-width: 992px) {
+    .bx-wrapper .bx-controls-direction a {
+        position: absolute;
+        top: 49%;
+        margin-top: -16px;
+        margin-left: -70px;
+        margin-right: -50px;
+        outline: 0;
+        width: 32px;
+        height: 32px;
+        text-indent: -9999px;
+        z-index: 9999;
+        background-color: #a9a8ba;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        border-radius:50%;
+    }
+}
+
+
+/*END BX SLIDER*/
+
