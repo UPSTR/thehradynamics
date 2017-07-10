@@ -883,6 +883,35 @@ input, button {
 
 /*SECTION DEPARTMENTS*/
 .sectionDepartments {
+    background: #f4f3f4;
+    padding:30px 10px 10px 10px;
+}
+.sectionDepartments .title {
+    font-size:24px;
+    margin: 0px 0 30px 0;
+    display: block;
 
+}
+.dapertmentsBlock {
+    border: 1px solid #e5e5ea;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    background: #ffffff;
+    padding:20px;
+    margin-bottom: 20px;
+}
+.dapertmentsBlock i {
+    font-size:24px;
+}
+.dapertmentsBlock .title {
+    font-size:16px;
+    text-transform: uppercase;
+    color: #281d2b;
+    margin: 20px 0;
+    text-align: center;
+}
+.dapertmentsBlock p {
+    font-size:13px;
 }
 /*END SECTION DEPARTMENTS*/
