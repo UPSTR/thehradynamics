@@ -162,6 +162,10 @@ input, button {
     background-color: rgb(188, 231, 132);
 }
 
+.navigation .navbar-light .navbar-nav .nav-link {
+    color: rgb(81, 59, 86);
+}
+
 .navigation .navbar-default ul > li.active:hover > a {
     color: rgb(81, 59, 86);
     background-color: rgb(188, 231, 132);
@@ -244,7 +248,7 @@ input, button {
     color: #513b56;
     font-size: 16px;
     outline: none;
-    margin: 9px 0 0 7px;
+    margin: 7px 0 0 7px;
 
 }
 
@@ -870,7 +874,8 @@ input, button {
 
 /*CONTENT*/
 .content {
-    margin: 40px;
+    margin: 40px 0 60px 0;
+    color: #281d2b;
 }
 
 .content p {
@@ -888,9 +893,10 @@ input, button {
 }
 .sectionDepartments .title {
     font-size:24px;
-    margin: 0px 0 30px 0;
+    margin: 10px 0 30px 0;
     display: block;
-
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .dapertmentsBlock {
     border: 1px solid #e5e5ea;
@@ -950,4 +956,60 @@ input, button {
     color: #e5e5ea;
     padding:20px 0;
 }
+
+ul.contentServiceList li {
+
+
+}
 /*END SERVICES*/
+
+/*CONTACT*/
+.sendBtn {
+    color: #ffffff;
+    background: #513b56;
+    font-size: 16px;
+    display: inline-block;
+    padding: 8px 42px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-weight: normal;
+    border: none;
+    cursor: pointer;
+    outline:none;
+}
+
+.sendBtn:hover {
+    text-decoration: none;
+    color: #513b56;
+    background: #bce784;
+}
+/*END CONTACT*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
