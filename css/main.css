@@ -173,6 +173,9 @@ input, button {
 .navigation .navbar-light .navbar-nav .nav-link {
     color: rgb(81, 59, 86);
 }
+.navigation .navbar-light .navbar-nav .nav-link + a {
+    margin-left: -10px;
+}
 
 .navigation .navbar-default ul > li.active:hover > a {
     color: rgb(81, 59, 86);
@@ -966,6 +969,13 @@ textarea.formControl {
 .content .material {
     padding: 0 100px 0 2px;
 }
+.material a {
+    color: #513b56;
+    text-decoration: underline;
+}
+.material a:hover {
+    text-decoration: none;
+}
 .material h1 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size:41px;
@@ -1044,6 +1054,12 @@ ul.contentServiceList li {
 
 .departmentsItems {
     align-items: stretch;
+}
+
+.departmentsItems .col-xl-2 {
+    padding-left: 7px;
+    padding-right: 7px;
+    min-width: 250px;
 }
 
 /*END SECTION DEPARTMENTS*/
