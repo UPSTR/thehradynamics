@@ -601,8 +601,28 @@ input, button {
 }
 
 .sectionServicesBlock2 {
+    padding:0;
+}
+
+
+
+.sectionServicesBlock2 .tab-content {
+    display: flex;
+    height: 100%;
+
+}
+
+.sectionServicesBlock2 .tab-pane {
     background: rgba(40, 29, 43, 0.95);
     padding: 40px 40px;
+    min-width: 320px;
+}
+@media (max-width: 768px) {
+    .sectionServicesBlock2 .tab-pane {
+        background: rgba(40, 29, 43, 0.95);
+        padding: 40px 40px;
+        min-width: 100%;
+    }
 }
 
 .sectionServicesBlock2 .title {

@@ -150,3 +150,39 @@ $( document ).ready(function() {
         $('#count-existing').html(value);
     });
 });
+
+$(document).ready(function () {
+    $("#contactForm").validate({
+        rules: {
+            "name": {
+                required: true,
+                minlength: 5
+            },
+            "email": {
+                required: true,
+                email: true
+            },
+            "text": {
+                required: true,
+                minlength: 5
+            }
+        },
+        messages: {
+            "name": {
+                required: "Please, enter a name"
+            },
+            "email": {
+                required: "Please, enter an email",
+                email: "Email is invalid"
+            },
+            "text": {
+                required: "Please, enter a message"
+            }
+        },
+        submitHandler: function (form) { // for demo
+            alert('valid form submitted'); // for demo
+            return false; // for demo
+        }
+    });
+
+});
