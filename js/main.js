@@ -152,37 +152,47 @@ $( document ).ready(function() {
 });
 
 $(document).ready(function () {
-    $("#contactForm").validate({
-        rules: {
-            "name": {
-                required: true,
-                minlength: 5
-            },
-            "email": {
-                required: true,
-                email: true
-            },
-            "text": {
-                required: true,
-                minlength: 5
-            }
-        },
-        messages: {
-            "name": {
-                required: "Please, enter a name"
-            },
-            "email": {
-                required: "Please, enter an email",
-                email: "Email is invalid"
-            },
-            "text": {
-                required: "Please, enter a message"
-            }
-        },
-        submitHandler: function (form) { // for demo
-            alert('valid form submitted'); // for demo
-            return false; // for demo
-        }
+
+    $('.flip').click(function(){
+        $(this).find('.card').toggleClass('flipped').mouseleave(function(){
+            $(this).removeClass('flipped');
+        });;
     });
 
+
+    // if ($("#contactForm")) {
+    //     $("#contactForm").validate({
+    //         rules: {
+    //             "name": {
+    //                 required: true,
+    //                 minlength: 5
+    //             },
+    //             "email": {
+    //                 required: true,
+    //                 email: true
+    //             },
+    //             "text": {
+    //                 required: true,
+    //                 minlength: 5
+    //             }
+    //         },
+    //         messages: {
+    //             "name": {
+    //                 required: "Please, enter a name"
+    //             },
+    //             "email": {
+    //                 required: "Please, enter an email",
+    //                 email: "Email is invalid"
+    //             },
+    //             "text": {
+    //                 required: "Please, enter a message"
+    //             }
+    //         },
+    //         submitHandler: function (form) { // for demo
+    //             alert('valid form submitted'); // for demo
+    //             return false; // for demo
+    //         }
+    //     });
+    // }
 });
+
